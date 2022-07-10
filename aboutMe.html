@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style3.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="left-col">
+        <img src="./images/Vtorologo.png" class="logo" />
+        <div class="content">
+          <h1>Interesting facts about me</h1>
+          <p>
+            Hobbies: reading books, learning history, solving math problems,
+            coding, playing video games and travel around the world
+            <br />
+            Favorite book: The Da Vinci Code
+            <br />
+            Football club i support: FC Barcelona
+            <br />
+            Favorite Tv shows/Movies: Game of thrones, everything about MARVEL,
+            Peaky Blinders and Black Sun
+            <br />
+            Favorite video games: Fifa, Minecraft
+          </p>
+          <button type="button" ><a href="index.html">HOME</a></button>
+        </div>
+      </div>
+      <div class="right-col">
+        <div class="slider">
+          <img src="./images/1.jpeg" id="Slide" />
+        </div>
+        <div class="slider-content">
+          <h1>Stark the Akita</h1>
+          <hr />
+          <p>
+            I have a dog, he is named after my favorite family from the GOT
+            series STARK, he is a Japanese Akita. As his breed dictates, because he is
+            a Royal Hound, he is too classy, handsome, clean, mean and stubborn.
+            We spend most of our time together sleeping, but when we are ready
+            to play or take a walk, we know how to have fun. Don't be fooled by the
+            appearances, he can be very dangerous.
+          </p>
+          <div class="controller">
+            <img src="./images/prev.png" id="BackBtn" />
+            <div class="vertical-line"></div>
+            <img src="./images/next.png" id="NextBtn" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var Slide = document.getElementById("Slide");
+      var BackBtn = document.getElementById("BackBtn");
+      var NextBtn = document.getElementById("NextBtn");
+
+      var slideimages = new Array(
+        "./images/1.jpeg",
+        "./images/2.jpeg",
+        "./images/3.jpeg",
+        "./images/8.jpeg"
+      );
+
+      let i = 0;
+
+      NextBtn.onclick = function () {
+        if (i < 3) {
+          Slide.src = slideimages[i + 1];
+          i++;
+        }
+      };
+      BackBtn.onclick = function () {
+        if (i > 0) {
+          Slide.src = slideimages[i - 1];
+          i--;
+        }
+      };
+    </script>
+  </body>
+</html>
