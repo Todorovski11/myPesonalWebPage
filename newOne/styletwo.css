@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+  box-sizing: border-box;
+}
+.header {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+.col-1 {
+  flex-basis: 43%;
+  flex-grow: 1;
+  background-image: url(./images/guitar.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 40px;
+  color: #fff;
+}
+.col-2 {
+  flex-basis: 57%;
+  flex-grow: 1;
+  padding: 40px 80px;
+  background-image: url(./images/music.png);
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+.nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  width: 80px;
+  cursor: pointer;
+}
+.search-icon {
+  width: 25px;
+  cursor: pointer;
+}
+.left-text {
+  width: 70%;
+  cursor: pointer;
+}
+.left-text > h1 {
+  font-size: 50px;
+  font-weight: 500;
+  color: #fff;
+}
+.left-text > p {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 30px 0;
+  color: #fff;
+}
+.left-text > a > img {
+  width: 60px;
+  margin-right: 20px;
+}
+.left-text a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  margin-top: 30px;
+}
+.col-2 > ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+.col-2 > ul > li > a {
+  display: inline-block;
+  color: #0c3b2e;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+.btn {
+  border: 3px solid #0c3b2e;
+  padding: 10px 30px;
+}
+.right-text {
+  margin-top: 160px;
+}
+.right-text > h2 {
+  font-size: 50px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.right-text {
+  font-weight: 500;
+  margin-bottom: 30px;
+  color: #0c3b2e;
+}
+.right-text > p {
+  font-size: 15px;
+  margin-bottom: 30px;
+  color: #6d9773;
+}
+.right-text > a {
+  text-decoration: none;
+  display: inline-block;
+  background: #0c3b2e;
+  color: #fff;
+  font-weight: 300;
+  letter-spacing: 1px;
+  padding: 15px 50px;
+  border-radius: 6px;
+  margin-bottom: 30px;
+  box-shadow: 0 5px 10px 6D9773;
+  transition: transform 0.5s;
+}
+.right-text > a:hover {
+  transform: translateY(-6px);
+}

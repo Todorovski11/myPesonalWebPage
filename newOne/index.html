@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <img src="./images/Vtorologo.png" alt="logo" />
+        <nav>
+          <ul id="menuList">
+            <li><a href="">Home</a></li>
+            <li><a href="./education.html">Education</a></li>
+            <li><a href="./skills.html">Skills</a></li>
+            <li><a href="./aboutMe.html">About me</a></li>
+          </ul>
+        </nav>
+        <img
+          src="./images/menu-logo.png"
+          alt="menu-logo"
+          onclick="togglemenu()"
+        />
+      </div>
+      <div class="row">
+        <div class="col-1">
+          <h2>Martin<br />Todorovski</h2>
+          <h3>My personal page</h3>
+          <button type="button"><a href="./education.html">My page</a><img src="./images/arrow.png" /></button>
+        </div>
+        <div class="col-2">
+          <img src="./images/colloseum (1).png" class="controller" />
+          <div class="color-box"></div>
+          <div class="add-btn">
+            <img src="./images/Dugme.png" />
+            <p><small></small></p>
+          </div>
+        </div>
+      </div>
+      <div class="social-links">
+        <img src="./images/yotube.png" />
+        <img src="./images/whatsup.png" />
+        <img src="./images/twiter.png" />
+      </div>
+    </div>
+
+    <script>
+      var menuList = document.getElementById("menuList");
+      menuList.style.maxHeight = "0px";
+      function togglemenu() {
+        if (menuList.style.maxHeight == "0px") {
+          menuList.style.maxHeight = "130px";
+        } else {
+          menuList.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>

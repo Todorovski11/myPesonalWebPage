@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.wrapper {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  flex-wrap: wrap;
+}
+.left-col,
+.right-col {
+  flex-basis: 50%;
+  height: 100vh;
+  position: relative;
+}
+.logo{
+    display: flex;
+    justify-content: space-between;
+}
+.logo > ul > li {
+  list-style: none;
+  display: inline-block;
+  margin-top: 60px;
+  padding-right: 100px;
+}
+.logo > img{
+  display: block;
+  width: 80px;
+  margin-top: 30px;
+  margin-left: 120px;
+}
+.logo > ul > li > a{
+  text-decoration: none;
+  color: #0c3b2e;
+}
+.content {
+  max-width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 120px;
+  transform: translateY(-50%);
+}
+.content > h1 {
+  color: #0c3b2e;
+  font-size: 60px;
+  line-height: 70px;
+  margin: 25px 0;
+}
+.content > p {
+  color: #0c3b2e;
+  font-size: 23px;
+  line-height: 28px;
+  margin-bottom: 50px;
+}
+.slider {
+  width: 100%;
+  height: 60%;
+  display: flex;
+}
+.slider > img {
+  width: 100%;
+}
+.slider-content {
+  width: 100%;
+  height: 100%;
+  background: url(./images/tretBackground.jpg);
+  padding-top: 100px;
+  padding-left: 30px;
+  box-sizing: border-box;
+}
+.slider-content > h2 {
+  font-size: 46px;
+  font-weight: 100;
+  color: #6d9773;
+}
+.slider-content > p {
+  color: #6d9773;
+  font-size: 36px;
+  line-height: 44px;
+  margin-bottom: 20px;
+}
+hr {
+  border: none;
+  width: 270px;
+  height: 3px;
+  background: #6d9773;
+  margin: 20px 0 30px;
+}
+@media only screen and (max-width: 800px) {
+  .logo > img{
+    margin: 40px auto;
+  }
+  .logo > ul > li >a{
+    margin:30px 0;
+    color: #fff;
+  }
+  .left-col,
+  .right-col {
+    flex-basis: 100%;
+  }
+  .content {
+    left: 0;
+    padding: 20px;
+    text-align: center;
+  }
+  .content > h1 {
+    font-size: 34px;
+    line-height: 38px;
+  }
+  .slider {
+    height: auto;
+  }
+  .slider-content {
+    height: auto;
+  }
+  .slider-content > p{
+    height: auto;
+    width: auto;
+  }
+}
